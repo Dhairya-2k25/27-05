@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigation Bars</title>
+  <style>
+    .vertical {
+      width: 150px;
+      background-color: purple;
+      padding: 0;
+      border: 2px solid black;
+    }
+
+    .vertical a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .vertical a:first-child {
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+    }
+
+    .horizontal {
+      margin-top: 20px;
+      border: 2px solid black;
+      width: fit-content;
+      background-color: lightgray;
+    }
+
+    .horizontal a {
+      display: inline-block;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-right: 1px solid gray;
+      color: blue;
+    }
+
+    .horizontal a:first-child {
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      gap: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Task</h3>
+  <div class="container">
+    <div>
+      <p><strong>Vertical Navigation Bar</strong></p>
+      <div class="vertical">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">CSS</a>
+        <a href="#">HTML</a>
+        <a href="#">Bootstrap</a>
+      </div>
+    </div>
+
+    <div>
+      <p><strong>Horizontal Navigation Bar</strong></p>
+      <div class="horizontal">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
